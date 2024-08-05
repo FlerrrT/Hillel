@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <form style="width: 100%; justify-content: center; align-items: center;" action="post">
+            <div class="myDiv">
+        <input id="name" type="text"  placeholder="name" required >
+        <input id="message" style="height: 5rem;" type="text"   placeholder="message" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{5,2150}">
+        <label style="margin: 8% 40%  0% 1%"    for="num">How we can find you?</label>
+        <input id="number"  type="text" placeholder="number" required pattern="[0-9._%+-]">
+        <input type="email" placeholder="message" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]">
+        <button type="submit"> Send </button>
+     </div>
+    </form>
+   
+    <script src="../DZ13/main.js"></script>
+    <style> 
+    html, body, .container {
+    height: 90%;
+}
+button{
+    margin-top: 10%;
+    width: 40%;
+    height: 15%;
+}
+input{
+    margin-top: 5%;
+    height: 6%;
+    width: 78%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.myDiv{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 30%;
+max-height: 80%;
+background-color: burlywood;
+border-color: chocolate;
+border-radius: 8px;
+}
+    </style>
+</body>
+</html>
