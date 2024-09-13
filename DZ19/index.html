@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Widget</title>
+    <style>
+        /* Основные стили для виджета */
+        .weather-widget {
+            font-family: Arial, sans-serif;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+
+        /* Название города */
+        .weather-widget h2 {
+            margin: 0;
+            font-size: 22px;
+            color: #333;
+        }
+
+        /* Температура */
+        .temperature {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        /* Описание погоды (например, "ясно") */
+        .description {
+            text-transform: capitalize;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Дополнительная информация, влажность и т.д. */
+        .details {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Иконка погоды */
+        .icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+        }
+
+        /* Спиннер загрузки (пока данные загружаются) */
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            color: #888;
+        }
+
+        /* Кнопка обновления */
+        .refresh-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .refresh-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="weather-widget">
+    <h2 class="city">Loading...</h2>
+    <div class="loading">Loading...</div>
+    <img class="icon" src="" alt="Weather icon" style="display: none;">
+    <p class="temperature">--°C</p>
+    <p class="description">--</p>
+    <div class="details">
+        <p class="humidity">Humidity: --%</p>
+        <p class="wind">Wind: -- m/s</p>
+    </div>
+    <!-- Кнопка для обновления данных -->
+    <button class="refresh-btn">Обновить данные</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
